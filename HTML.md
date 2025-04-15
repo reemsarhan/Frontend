@@ -107,6 +107,10 @@ The download attribute allows users to download a file instead of navigating to 
 <header> ,  <footer> ,  <section> , <article> 
 ```
 #### Native support for audio and video.
-#### Form enhancements (<input type="email">, <input type="date">).
+#### Form enhancements
+```
+<input type="email">
+<input type="date">
+```
 #### Geolocation API.
 #### Web Storage API (localStorage, sessionStorage).
