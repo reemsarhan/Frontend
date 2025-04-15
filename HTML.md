@@ -1,5 +1,3 @@
-# HTML Interview Questions
-
 ###  What is HTML? 
 HTML (HyperText Markup Language) is the standard language used to create and design web pages. It defines the structure of a webpage using elements such as headings, paragraphs, links, images, and forms.
 
