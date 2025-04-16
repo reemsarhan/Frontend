@@ -160,4 +160,80 @@ export default function Dashboard() {
   return <h1>Welcome, {session.user.name}</h1>;
 }
 ```
+
+
+
+## 1. SSR (Server-Side Rendering)
+What is it?
+Rendering React components on the server into HTML, then sending that HTML to the browser.
+
+### How it works:
+1-User requests a page.
+1-Server renders the page using React to HTML.
+3-Sends that HTML to the browser.
+4-Browser hydrates it (adds interactivity via JS).
+
+Used in:
+ Next.js (by default with getServerSideProps or in App Router)
+
+### Pros:
+Great for SEO (search engines see full content).
+Fast first page load.
+
+### Cons:
+Slower for highly interactive apps due to hydration delay.
+
+## 2. CSR (Client-Side Rendering)
+What is it?
+The entire React app is rendered in the browser, not on the server.
+
+How it works:
+1-Server sends a mostly empty HTML file.
+2-Browser downloads JavaScript.
+3-React takes over and renders everything in the browser.
+
+ Used in:
+Create React App (CRA) and parts of Next.js (with 'use client')
+
+### Pros:
+Very dynamic and interactive.
+Works well for apps after the initial load.
+
+### Cons:
+Slower first page load.
+SEO is harder.
+
+## 3. Hydration
+What is it?
+The process of making SSR-rendered HTML interactive by attaching React’s JavaScript in the browser.
+
+How it works:
+React reattaches event listeners, states, and functionality to the static HTML it received from SSR.
+
+Used when:
+Any time SSR is used, hydration happens right after the HTML is shown.
+
+Example:
+You see the page instantly, but buttons might take a second before they start working—that’s hydration delay.
+
+## 4. React Server Components (RSC)
+What is it?
+A new way to render parts of your React app only on the server, with no JavaScript sent to the client for those components.
+
+How it works:
+1-React renders some components on the server.
+2-Sends the component structure (not HTML) to the browser.
+3-Combined with Client Components for interactivity.
+
+Used in:
+ Next.js App Router (13+)
+
+### Pros:
+Drastically reduces JS bundle size.
+Improves performance.
+Keeps secrets (API keys, DB access) safe on server.
+
+### Cons:
+Can’t use state (useState, useEffect) or events.
+Only supported in specific environments (Next.js App Router)
  
