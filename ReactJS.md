@@ -179,7 +179,7 @@ function Timer() {
   return <p>Seconds: {seconds}</p>;
 }
 ```
-### 🚀 Performance Hooks – useMemo, useCallback
+### 🚀 Performance Hooks – useMemo, useCallback  (can be removed after appearnce of React Compiler)
 ```
 // useMemo Example
 import React, { useMemo, useState } from 'react';
