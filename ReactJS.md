@@ -21,6 +21,7 @@ JSX (JavaScript XML) is a syntax extension that allows writing HTML inside JavaS
 ```
 const element = <h1>Hello, World!</h1>;
 ```
+#### Babel	Transforms syntax (e.g. JSX → JS)
 JSX gets compiled into JavaScript
 ```
 React.createElement("h1", null, "Hello, World!");
