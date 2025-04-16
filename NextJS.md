@@ -79,7 +79,7 @@ Next.js supports multiple CSS solutions:
 Global CSS (styles/global.css)
 CSS Modules (Component.module.css)
 Styled Components
-Tailwind CSS
+### Tailwind CSS
 
 ✅ Example of CSS Module:
 ```
