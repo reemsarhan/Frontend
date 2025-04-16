@@ -218,3 +218,35 @@ function Parent() {
 }
 
 ```
+
+
+## What is the React Compiler?
+The React Compiler is an upcoming tool (still experimental) that automatically optimizes your React code — without you needing to do anything manually.
+
+Think of it as: A smart engine that rewrites your components behind the scenes to make them faster and more efficient.
+
+  What does it help with?
+Here’s what the React Compiler is designed to do:
+
+### 1. Automatic Memoization
+It figures out which parts of your components depend on what props/state.
+
+Then it skips re-rendering parts of your component tree that didn’t change.
+
+You no longer need to use React.memo, useMemo, or useCallback yourself.
+   Imagine not needing useCallback at all — and still getting the same performance wins.
+
+### 2. Avoiding Unnecessary Re-renders
+It tracks dependencies like a compiler would in a functional language.
+
+It only re-renders parts of the UI when their actual inputs (props/state) change.
+
+This helps with:
+Better runtime performance
+Less boilerplate
+Fewer bugs from misused memoization
+
+### 3. Smarter Optimization
+Since it's built with a deep understanding of how React works, the compiler can optimize your code in ways manual tuning can’t — kind of like what a compiler does for C/C++ code.
+
+
