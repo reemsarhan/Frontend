@@ -15,6 +15,9 @@ rem	Relative to the root (html) font size.
 vh	Percentage of the viewport height.
 vw	Percentage of the viewport width.
 
+## | Feature	     | Box Model                 	|    Flexbox
+## |Purpose	Handles  | spacing within an element    |	Handles layout of multiple elements in a container
+
 ### Box Model
 ```
 +---------------------------+
