@@ -15,7 +15,7 @@ rem	Relative to the root (html) font size.
 vh	Percentage of the viewport height.
 vw	Percentage of the viewport width.
 
-### Box Midel
+### Box Model
 ```
 +---------------------------+
 |        margin             |
