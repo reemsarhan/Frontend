@@ -251,3 +251,6 @@ Fewer bugs from misused memoization
 Since it's built with a deep understanding of how React works, the compiler can optimize your code in ways manual tuning can’t — kind of like what a compiler does for C/C++ code.
 
 
+## Axios
+is a popular JavaScript library used to make HTTP requests (GET, POST, PUT, DELETE, etc.) from the browser or Node.js.
+In React, it's often used to fetch data from APIs
