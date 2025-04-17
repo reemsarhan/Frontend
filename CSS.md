@@ -16,6 +16,7 @@ vh	Percentage of the viewport height.
 vw	Percentage of the viewport width.
 
 ### Box Midel
+```
 +---------------------------+
 |        margin             |
 |  +---------------------+  |
@@ -28,7 +29,7 @@ vw	Percentage of the viewport width.
 |  |  +---------------+  |  |
 |  +---------------------+  |
 +---------------------------+
-
+```
 
 ### What is Flexbox and how does it work?
 Flexbox is a layout model that allows items to align efficiently inside a container.
