@@ -110,6 +110,36 @@ querySelector() (matching CSS selector)
 querySelectorAll()
 ```
 
+# DOM Tree Structure Example
+
+- `document`
+  - `html`
+    - `head`
+      - `title`
+      - `meta`
+      - `link` (CSS)
+      - `script` (JS)
+    - `body`
+      - `header`
+        - `nav`
+          - `ul`
+            - `li`
+              - `a`
+      - `main`
+        - `section`
+          - `h1`
+          - `p`
+          - `img`
+        - `article`
+          - `h2`
+          - `p`
+      - `aside`
+        - `ul`
+          - `li`
+      - `footer`
+        - `p`
+
+
 ## Event Propagation
 ### Event Bubbling
 Event bubbling is the default behavior in most cases. When an event is triggered on an element, it first triggers on the innermost element (the target), and then bubbles up to the parent elements in the DOM hierarchy.
