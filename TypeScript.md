@@ -53,28 +53,64 @@ let count = 10; // TypeScript infers it as 'number'
 // count = "Hello"; ❌ Error: Type 'string' is not assignable to type 'number'
 ```
 ## What is the difference between an Interface and a Type?
-Feature	interface	type
-Usage	Object structure	Can be used for anything
-Extensibility	✅ Can be extended	❌ Cannot be extended
-Merging	✅ Supports merging	❌ No merging
-  Example of Interface & Type:
+### Interfaces 
+An interface is used to define the shape of an object, but it can also be used to define function signatures, callable objects, and more.
+Key Characteristics of an Interface:
+Extends/Implements: Interfaces can extend other interfaces and be implemented by classes.
+Declaring object shapes: Primarily used to describe the shape of objects and their properties.
+Merging: If multiple interfaces with the same name are declared, TypeScript will merge them into one.
 ```
-// Interface (extends and merges)
-interface User {
+interface Person {
   name: string;
   age: number;
+  greet(): void;
 }
-
-interface Admin extends User {
-  role: string;
-}
-
-// Type Alias (Cannot extend)
-type Employee = {
-  name: string;
-  age: number;
+const john: Person = {
+  name: "John",
+  age: 30,
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
 };
-type Manager = Employee & { department: string };
+john.greet(); // Output: Hello, my name is John
+```
+Extending Interfaces:
+```
+interface Employee extends Person {
+  position: string;
+}
+const jane: Employee = {
+  name: "Jane",
+  age: 25,
+  position: "Developer",
+  greet() {
+    console.log(`Hi, I'm ${this.name} and I work as a ${this.position}`);
+  }
+};
+```
+### Type Aliases  
+A type alias allows you to define a type that can represent primitives, unions, intersections, tuples, and object shapes. Type aliases are more flexible than interfaces, but they can't be used to define callable types directly or merged.
+Key Characteristics of a Type Alias:
+Unions and Intersections: Type aliases can represent more complex types using unions (|) and intersections (&).
+Flexible: Type aliases can represent not just objects but also primitives, tuples, arrays, etc.
+Cannot be merged: Unlike interfaces, type aliases cannot be merged.
+```
+type Vehicle = {
+  brand: string;
+  wheels: number;
+};
+type ElectricVehicle = Vehicle & {
+  batteryLife: number;
+};
+const tesla: ElectricVehicle = {
+  brand: "Tesla",
+  wheels: 4,
+  batteryLife: 300,
+};
+type StringOrNumber = string | number;
+
+let value: StringOrNumber = "Hello"; // OK
+value = 42; // Also OK
 ```
 ## What is the difference between == and === in TypeScript?
 Operator	Meaning
@@ -91,7 +127,6 @@ Generics allow writing reusable, type-safe components and functions.
 function identity<T>(value: T): T {
   return value;
 }
-
 console.log(identity<string>("Hello")); // Output: Hello
 console.log(identity<number>(42)); // Output: 42
 ```
@@ -126,7 +161,6 @@ let readonlyUser: Readonly<User> = { name: "Alice", age: 25, email: "alice@email
 ```
 ## What is Type Narrowing? 
 TypeScript uses control flow analysis to narrow a variable’s type.
-
  Example using typeof check:
 ```
 function print(value: string | number) {
