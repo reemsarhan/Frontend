@@ -221,9 +221,8 @@ function Parent() {
 ```
 
 ## axios
-A third-party JavaScript library used to make HTTP requests (like GET, POST, PUT, DELETE).
-Purpose: To fetch data from an API or backend server.
-Works outside of React too — it's just a generic HTTP client.
+is a popular JavaScript library used to make HTTP requests (GET, POST, PUT, DELETE, etc.) from the browser or Node.js.
+In React, it's often used to fetch data from APIs
 ```
 import axios from 'axios';
 axios.get('https://api.example.com/data')
@@ -260,7 +259,4 @@ Fewer bugs from misused memoization
 ### 3. Smarter Optimization
 Since it's built with a deep understanding of how React works, the compiler can optimize your code in ways manual tuning can’t — kind of like what a compiler does for C/C++ code.
 
-
-## Axios
-is a popular JavaScript library used to make HTTP requests (GET, POST, PUT, DELETE, etc.) from the browser or Node.js.
-In React, it's often used to fetch data from APIs
+ 
