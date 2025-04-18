@@ -220,6 +220,16 @@ function Parent() {
 
 ```
 
+## axios
+A third-party JavaScript library used to make HTTP requests (like GET, POST, PUT, DELETE).
+Purpose: To fetch data from an API or backend server.
+Works outside of React too — it's just a generic HTTP client.
+```
+import axios from 'axios';
+axios.get('https://api.example.com/data')
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
+```
 
 ## What is the React Compiler?
 The React Compiler is an upcoming tool (still experimental) that automatically optimizes your React code — without you needing to do anything manually.
