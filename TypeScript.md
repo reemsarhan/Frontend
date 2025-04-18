@@ -33,21 +33,19 @@ TypeScript provides primitive types, object types, and special types.
 | never  | `function error(): never { throw new Error("Error!"); }` |
 
 ## What is the difference between “any” and “unknown”?
-Feature	any	unknown
-Type Safety	🚨 No type checking	✅ Safe
-Assignability	Can be assigned to anything	Must be type-checked before use
-  Example of unknown enforcing type safety:
-```
-let value: unknown = "Hello";
+###  any Type
+The any type is the most permissive type in TypeScript. It allows a variable to hold any value and bypasses all type checking.
 
-// Directly assigning to a string variable (❌ Error)
-let message: string = value; // Type error!
+Key Characteristics of any:
+No type checking: With any, TypeScript won't check what kind of data the variable holds. It can be reassigned to any other type.
+Unsafe: It can lead to runtime errors because TypeScript won’t enforce type safety.
+ 
+### unknown Type
+The unknown type is a safer alternative to any. It is also a type that represents any value, but TypeScript enforces type checking when you want to perform operations on it.
+Key Characteristics of unknown:
+Requires type assertion or checks: Before performing operations on an unknown value, you need to check its type or use type assertions.
+Safer: It avoids potential runtime errors by ensuring that any operations on the value are type-safe.
 
-// Using type checking (✅ Works)
-if (typeof value === "string") {
-  let message: string = value;
-}
-```
 ## What is Type Inference in TypeScript?
 TypeScript automatically determines the type if not explicitly defined.
 ```
