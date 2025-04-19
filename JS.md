@@ -203,3 +203,33 @@ async function getData() {
 }
 getData();
 ```
+
+
+# 🌀 JavaScript Event Loop  
+
+The **event loop** is a core concept in JavaScript that allows asynchronous, non-blocking operations—even though JavaScript is single-threaded.
+
+---
+
+## ⚙️ How It Works 
+1. **Call Stack**  
+   The place where JavaScript functions are executed one at a time.
+2. **Web APIs**  
+   Browser-provided features (e.g., `setTimeout`, `DOM events`, `fetch`) that handle asynchronous tasks outside the main thread.
+3. **Callback Queue**  
+   A queue where callback functions wait until the call stack is empty.
+4. **Event Loop**  
+   Continuously checks if the call stack is empty and pushes the next task from the queue into the stack.
+---
+
+   
+
+```
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+console.log("End");
+```
