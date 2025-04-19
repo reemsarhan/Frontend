@@ -230,6 +230,13 @@ axios.get('https://api.example.com/data')
   .catch(error => console.error(error));
 ```
 
+
+## Redux 
+is a predictable state container for JavaScript applications, commonly used with frameworks like React. 
+It provides a centralized way to manage and update the state of your application in a consistent and structured manner.
+
+
+
 ## What is the React Compiler?
 The React Compiler is an upcoming tool (still experimental) that automatically optimizes your React code — without you needing to do anything manually.
 
