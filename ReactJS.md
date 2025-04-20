@@ -235,7 +235,32 @@ axios.get('https://api.example.com/data')
 is a predictable state container for JavaScript applications, commonly used with frameworks like React. 
 It provides a centralized way to manage and update the state of your application in a consistent and structured manner.
 
+``` 
+import { createStore } from 'redux';
 
+// Initial state
+const initialState = {
+  count: 0
+};
+
+// Reducer function
+function counterReducer(state = initialState, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { count: state.count + 1 };
+    case 'DECREMENT':
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+// Create store
+const store = createStore(counterReducer);
+
+export default store;
+
+```
 
 ## What is the React Compiler?
 The React Compiler is an upcoming tool (still experimental) that automatically optimizes your React code — without you needing to do anything manually.
