@@ -258,3 +258,23 @@ nth-of-type(n)	Selects the nth occurrence of a specific type.
 p:nth-child(2) { color: red; } /* Selects the second child, regardless of type */
 p:nth-of-type(2) { color: blue; } /* Selects the second `<p>` only */
 ```
+
+
+##  CSS Viewport Units
+CSS provides viewport-relative units to make layouts responsive:
+
+
+Unit	Description	Example
+vw	1% of the viewport width	width: 50vw = 50% of screen width
+vh	1% of the viewport height	height: 100vh = full screen height
+vmin	1% of the smaller of vw or vh	Adapts to smallest side
+vmax	1% of the larger of vw or vh	Adapts to largest side
+
+### example
+```
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+}
+```
