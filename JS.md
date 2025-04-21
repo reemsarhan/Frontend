@@ -233,3 +233,12 @@ setTimeout(() => {
 
 console.log("End");
 ```
+
+
+
+##  Event Loop + DOM = Interactivity
+When a button is clicked:
+ ### The browser sends the event to the Web API
+ ### The callback is queued
+ ### The event loop adds it to the call stack
+ ### The callback modifies the DOM
