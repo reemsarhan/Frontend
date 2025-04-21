@@ -67,9 +67,9 @@ Custom attributes used to store extra information on elements.
 #### Use CSS media queries.
 #### Use flexible layouts with percentages instead of fixed units.
 
-### What is the difference between <script> and <noscript>?
-#### <script>: Embeds JavaScript.
-#### <noscript>: Displays alternative content if JavaScript is disabled.
+### What is the difference between <script> and <noscript> ?
+#### <script> : Embeds JavaScript.
+#### <noscript> : Displays alternative content if JavaScript is disabled.
 
 ### What is the difference between defer and async in <script>?
 #### async: Loads and executes JavaScript as soon as possible without blocking HTML parsing.
