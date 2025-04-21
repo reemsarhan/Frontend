@@ -74,6 +74,8 @@ Custom attributes used to store extra information on elements.
 ### What is the difference between defer and async in <script>?
 #### async: Loads and executes JavaScript as soon as possible without blocking HTML parsing.
 #### defer: Loads the script in the background and executes it after HTML parsing.
+Use **async** for scripts that don’t depend on DOM or other scripts.
+Use **defer** for scripts that manipulate the DOM or should execute in order.
 
 ### What is the purpose of the download attribute in <a> tags?
 The download attribute allows users to download a file instead of navigating to the link.
