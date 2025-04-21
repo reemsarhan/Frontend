@@ -1,5 +1,5 @@
 # CSS
-### What is the difference between static,relative, absolute, fixed, and sticky positioning in CSS?
+### What is the difference between static, relative, absolute, fixed, and sticky positioning in CSS?
 
 #### static: HTML elements are positioned static by default.
 
