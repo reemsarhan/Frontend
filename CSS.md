@@ -1,10 +1,16 @@
 # CSS
-### What is the difference between relative, absolute, fixed, and sticky positioning in CSS?
-Position Type	Description
-relative	Positioned relative to its normal position.
-absolute	Positioned relative to the nearest positioned ancestor.
-fixed	Positioned relative to the viewport (doesn't move on scroll).
-sticky	Behaves like relative until a certain scroll position, then becomes fixed.
+### What is the difference between static,relative, absolute, fixed, and sticky positioning in CSS?
+
+#### static: HTML elements are positioned static by default.
+
+#### relative: is positioned relative to its normal position(static).
+
+#### fixed:  it always stays in the same place even if the page is scrolled.
+
+#### absolute: is positioned relative to the nearest positioned ancestor.
+
+#### sticky:  is positioned based on the user's scroll position.
+ 
 
 ### What is the difference between em, rem, px, %, and vh/vw in CSS?
 Unit	Description
