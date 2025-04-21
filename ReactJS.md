@@ -292,3 +292,4 @@ Fewer bugs from misused memoization
 Since it's built with a deep understanding of how React works, the compiler can optimize your code in ways manual tuning can’t — kind of like what a compiler does for C/C++ code.
 
  
+### The useState hook is used for managing local state within a component, while the useContext hook is used for managing global state across multiple components
