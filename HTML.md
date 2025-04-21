@@ -98,9 +98,9 @@ The download attribute allows users to download a file instead of navigating to 
   Your browser does not support the video tag.
 </video>
 ```
-### What is the difference between <section> and <article>?
-<section>: Represents a general section of a page.
-<article>: Represents self-contained content that can stand alone.
+### What is the difference between `<section>` and `<article>` ?
+`<section>`: Represents a general section of a page.
+ `<article>` : Represents self-contained content that can stand alone.
 
   
 ### HTML5 Features 
